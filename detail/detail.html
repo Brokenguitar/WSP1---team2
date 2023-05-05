@@ -4,7 +4,8 @@
         <title>Detail</title>
 
         <style>
-            img.a{float: center}
+            img.a{display: inline;}
+            img.b{float: right; display: inline;}
             h1{
                 text-align: center;
             }
@@ -17,6 +18,20 @@
                 display: none;
                 }
             .info-img:hover+.info{
+                display: block;
+            }
+            .info2 {
+                padding: 5px 8px;
+                background-color: #0e4a84;
+                border-radius: 1px;
+                color: #e4e4e4;
+                position: relative;
+                display: none;
+                float: right;
+                top: 90px;
+                left: 90px;
+                }
+            .info-img2:hover+.info2{
                 display: block;
             }
             table{
@@ -47,15 +62,20 @@
                   width: 75%;
                 }
               }
-
+            .bold{
+                font-weight: bold;
+            }
             
         </style>
 
     </head>
 
     <body>
-        <p class="info-img"><A href="example.html"><img class="a" src="return.png" width="80" height="80"></A></p>
+        <span class="info-img"><A href="../calendar/calendar.html"><img class="a" src="return.png" width="80" height="80"></A></span>
         <div class="info">캘린더 화면으로 돌아가기</div>
+        <span class="info-img2"><A href="../main/main.html"><img class="b" src="home.png" width="90" height="80"></A></span>
+        <div class="info2">메인 화면으로 돌아가기</div>
+        
         <h1>4월 10일</h1>
     <table border="2" cellpadding="10">
         <tr>
@@ -65,8 +85,8 @@
             </th>
             <td rowspan="3" > 
                 <div>
-                    일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정 | [4.10(월) ~ 4.14(금)]<br><br>
-                    세부내용 |
+                    <div class="bold">일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</div> | [4.10(월) ~ 4.14(금)]<br><br>
+                    <div class="bold">세부내용 |</div>
                     </div>
                     <div style="padding-left:10px">
                      > 대상 : 2022학년도 후기 졸업예정자(같은 해 8월 졸업예정자)<br>
