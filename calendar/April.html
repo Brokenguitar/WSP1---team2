@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>April</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      table-layout: fixed;
+    }
+
+    thead {
+      background-color: #318998;
+      height: 2.5em;
+      width: 3em;
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .weekdays {
+      background-color: #ddd;
+    }
+
+    .move_button {
+      font-size: 50px;
+    }
+
+    .weekdays th {
+      background-color: #274472;
+      font-weight: bold;
+      color: #ddd;
+      text-align: center;
+      vertical-align: center;
+      padding: 0.7em;
+    }
+
+    .days td {
+      background-color: #fff;
+      font-weight: bold;
+      height: 6em;
+      font-size: 20px;
+    }
+
+    .date {
+      color: #394c93;
+    }
+
+    .days td.today {
+      background-color: #ccc;
+    }
+
+    .days td:not(.today):hover {
+      background-color: #aeb7e626;
+      cursor: pointer;
+    }
+
+    .month {
+      font-size: 30px;
+
+      text-align: center;
+      width: 87%;
+      margin: -50px;
+
+      padding-bottom: 0px;
+      /*border: 1px solid red;*/
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    #header {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      font-size: 1.5em;
+    }
+
+    .leftRight {
+      margin: 2em;
+    }
+
+    #wrapper {
+      display: inline;
+    }
+
+    #content {
+      float: left;
+      display: flex;
+      flex-direction: row;
+      background-color: red;
+    }
+
+    #nav {
+      float: right;
+
+      background-color: rgb(230, 242, 255);
+      width: 30%;
+      /*이걸 flex로 하고 왼쪽 정렬하니까 안에 있는 글자가 일본 책마냥 써짐. 왜인지는 나중에 분석해해*/
+    }
+
+    table {
+      float: left;
+      width: 70%;
+    }
+  </style>
+  <div id="header">
+    <button class="leftRight">&lt</button>
+    <h1>4월</h1>
+    <button class="leftRight">&gt</button>
+  </div>
+</head>
+
+<body>
+  <div id="wrapper">
+    <table>
+      <thead>
+        <tr class="weekdays">
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody class="days">
+        <tr class="date">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+
+        </tr>
+
+        <tr class="date">
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+
+        <tr class="date">
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+
+        </tr>
+
+        <tr class="date">
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+        </tr>
+        <tr class="date">
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+        </tr>
+        <tr class="date">
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="nav">
+      <h1>와 이걸 해냄</h1>
+      <p>
+        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
+        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
+        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
+        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
+        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
+        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
+        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
+        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
+        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
+        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
+        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
+        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
+        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
+        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
+        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
+        보여줍니다.여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
+        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
+        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
+        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
+        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
+        보여줍니다.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
