@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Detail</title>
-
+        <meta charset="UTF-8">
+        <title>한양대학교 학사일정 안내 페이지</title>
+        <link rel="icon" type="image/x-icon" href="HYU_symbol_basic_png.png">
         <style>
-            img.a{display: inline;}
-            img.b{float: right; display: inline;}
+           header {
+            background: #0e4a84;
+            padding-left: 32px;
+            padding-right: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+           }
+
+            ul {
+            list-style-type: none;
+            padding: 0;
+            
+            }
+
+            li {
+            display: inline-block;
+            margin-left: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            }
+            a:link,a:visited {
+                color: white;
+                text-decoration: none;
+            }
             h1{
                 text-align: center;
             }
@@ -34,20 +60,32 @@
             .info-img2:hover+.info2{
                 display: block;
             }
+            table.txt-table{
+                table-layout: fixed;
+                width: 100%;
+            }
+            table thead tr{
+                width: 100%
+            }
+            
             table{
                 margin: 0 auto;
-                border-color: #0e4a84;
+                border-radius: 10px;
+                border-collapse: collapse;
+                border-style: none;
             }
 
             td {
                 word-break: break-word;
                 background-color:rgb(230, 242, 255);
+                border-radius: 10px;
               } 
 
               
             th {
                 background-color:#0e4a84;
                 color: #ddd;
+                border-radius: 10px;
               } 
 
 
@@ -65,19 +103,55 @@
             .bold{
                 font-weight: bold;
             }
-            
+            .white{
+                border-radius: 10px;
+                width: 50%;
+                background-color: white;
+                border-style: hidden;
+
+            }
+            .d1{
+                width: 70%;
+                background-color: white;
+                border-radius: 10px;
+                width:80%;
+                background-color: white;
+                border-style: hidden;
+                float:left;
+                
+            }
+            .d2{
+               
+                top: 30%;
+                right: 30%;
+                border-radius: 10px;
+                width: 80%;
+                background-color: white;
+                border-style: hidden;
+                float:left;
+                margin-top: 2%;
+                
+            }
         </style>
 
     </head>
 
     <body>
-        <span class="info-img"><A href="../calendar/March.html"><img class="a" src="return.png" width="80" height="80"></A></span>
-        <div class="info">캘린더 화면으로 돌아가기</div>
-        <span class="info-img2"><A href="../main/main.html"><img class="b" src="home.png" width="90" height="80"></A></span>
-        <div class="info2">메인 화면으로 돌아가기</div>
-        
+        <header>
+            <h1><a href="../main/main.html"><img src="hyu_main.png" width="200px"></a></h1>
+            <nav>
+              <ul>
+                <li> <a href="../calendar/March.html">3월</a></li>
+                <li><a href="../calendar/April.html">4월</a></li>
+                <li><a href="../calendar/May.html">5월</a></li>
+                <li><a href="../calendar/June.html">6월</a></li>
+              </ul>
+            </nav>
+        </header>
+                  
+  
         <h1>4월 10일</h1>
-    <table border="2" cellpadding="10">
+   <table cellpadding="10">
         <tr>
             <th colspan="2">
                 <img class="a" src="report.jpg" width="306" height="204"/><br>
@@ -85,18 +159,29 @@
             </th>
             <td rowspan="3" > 
                 <div>
-                    <div class="bold">일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</div> | [4.10(월) ~ 4.14(금)]<br><br>
-                    <div class="bold">세부내용 |</div>
+                    
                     </div>
-                    <div style="padding-left:10px">
-                     > 대상 : 2022학년도 후기 졸업예정자(같은 해 8월 졸업예정자)<br>
-                     > 심사일정 <br>
-                    </div>
-                    <div style="padding-left:20px">
-                     - 1차 심사(5월): 1차 심사는 각 지도교수가 실시하되, 하위작만 선발<br>
-                     - 2차 심사(6월): 졸업작품/논문/연구 평가위원들이 지도 교수의 심사 결과를 참고하여 하위작 중에서
-                     다음학기 재심사대상자 선정
-                    </div>
+                  
+                     <table class="d1">
+                        <tr class="white">
+                            <td class="white"> 
+                                <div class="bold">일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</div> | [4.10(월) ~ 4.14(금)]                           
+                                
+                            </td>
+                        </tr>    
+                    </table>
+                    <table class="d2">
+                        <tr class="white">
+                            <td class="white"> 
+                                <div class="bold">세부내용 |</div>
+                                > 대상 : 2022학년도 후기 졸업예정자(같은 해 8월 졸업예정자)
+                                > 심사일정 
+                                 - 1차 심사(5월): 1차 심사는 각 지도교수가 실시하되, 하위작만 선발<br>
+                                 - 2차 심사(6월): 졸업작품/논문/연구 평가위원들이 지도 교수의 심사 결과를 참고하여 하위작 중에서
+                                다음학기 재심사대상자 선정
+                            </td>
+                        </tr>
+                    </table>
     
             </td>
         </tr>
