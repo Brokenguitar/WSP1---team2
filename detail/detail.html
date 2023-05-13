@@ -7,18 +7,17 @@
         <style>
            header {
             background: #0e4a84;
-            padding-left: 32px;
+            padding-left: 25px;
             padding-right: 32px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-radius: 10px;
+            border-radius: 5px;
            }
 
             ul {
             list-style-type: none;
-            padding: 0;
-            
+            padding: 0;  
             }
 
             li {
@@ -34,32 +33,25 @@
             }
             h1{
                 text-align: center;
+                font-size: 40px;
             }
             .info {
                 padding: 5px 8px;
                 background-color: #0e4a84;
+                opacity:0.8; 
                 border-radius: 1px;
                 color: #e4e4e4;
                 position: absolute;
                 display: none;
-                }
+                top: 90px;
+                left: 90px;
+                border-radius: 5px;
+            }
+
             .info-img:hover+.info{
                 display: block;
             }
-            .info2 {
-                padding: 5px 8px;
-                background-color: #0e4a84;
-                border-radius: 1px;
-                color: #e4e4e4;
-                position: relative;
-                display: none;
-                float: right;
-                top: 90px;
-                left: 90px;
-                }
-            .info-img2:hover+.info2{
-                display: block;
-            }
+
             table.txt-table{
                 table-layout: fixed;
                 width: 100%;
@@ -70,9 +62,6 @@
             
             table{
                 margin: 0 auto;
-                border-radius: 10px;
-                border-collapse: collapse;
-                border-style: none;
             }
 
             td {
@@ -85,7 +74,7 @@
             th {
                 background-color:#0e4a84;
                 color: #ddd;
-                border-radius: 10px;
+                border-radius: 5px;
               } 
 
 
@@ -111,13 +100,13 @@
 
             }
             .d1{
-                width: 70%;
                 background-color: white;
                 border-radius: 10px;
-                width:80%;
+                width:100%;
                 background-color: white;
                 border-style: hidden;
                 float:left;
+                height: 50px;
                 
             }
             .d2{
@@ -125,10 +114,11 @@
                 top: 30%;
                 right: 30%;
                 border-radius: 10px;
-                width: 80%;
+                width: 100%;
                 background-color: white;
                 border-style: hidden;
                 float:left;
+                height: 240px;
                 margin-top: 2%;
                 
             }
@@ -138,12 +128,16 @@
 
     <body>
         <header>
-            <h1><a href="../main/main.html"><img src="hyu_main.png" width="200px"></a></h1>
+            <p class="info-img"><a href="../main/main.html"><img src="logo_w.png" width="300px"></a></p>
+            <div class="info">메인 화면으로 돌아가기</div>
             <nav>
               <ul>
                 <li> <a href="../calendar/March.html">3월</a></li>
+                &nbsp;
                 <li><a href="../calendar/April.html">4월</a></li>
+                &nbsp;
                 <li><a href="../calendar/May.html">5월</a></li>
+                &nbsp;
                 <li><a href="../calendar/June.html">6월</a></li>
               </ul>
             </nav>
@@ -159,26 +153,31 @@
             </th>
             <td rowspan="3" > 
                 <div>
-                    
-                    </div>
-                  
-                     <table class="d1">
+
+                    <table class="d1">
                         <tr class="white">
                             <td class="white"> 
-                                <div class="bold">일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정</div> | [4.10(월) ~ 4.14(금)]                           
+                                <div class="bold">&nbsp; 일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정 &nbsp;|&nbsp; 4.10(월) ~ 4.14(금)        </div>                
                                 
                             </td>
                         </tr>    
+                    
+                    </div>
+                  
+
                     </table>
                     <table class="d2">
                         <tr class="white">
                             <td class="white"> 
-                                <div class="bold">세부내용 |</div>
-                                > 대상 : 2022학년도 후기 졸업예정자(같은 해 8월 졸업예정자)
-                                > 심사일정 
-                                 - 1차 심사(5월): 1차 심사는 각 지도교수가 실시하되, 하위작만 선발<br>
-                                 - 2차 심사(6월): 졸업작품/논문/연구 평가위원들이 지도 교수의 심사 결과를 참고하여 하위작 중에서
-                                다음학기 재심사대상자 선정
+                                <div class="bold">&nbsp; 세부내용 | <br> </div>
+                                <div style="padding-left:20px">
+                                    > 대상 : 2022학년도 후기 졸업예정자(같은 해 8월 졸업예정자)<br>
+                                    > 심사일정 <br>
+                                   </div>
+                                   <div style="padding-left:30px">
+                                    - 1차 심사(5월): 1차 심사는 각 지도교수가 실시하되, 하위작만 선발<br>
+                                    - 2차 심사(6월): 졸업작품/논문/연구 평가위원들이 지도 교수의 심사 결과를 참고하여 하위작 중에서 다음학기 재심사대상자 선정
+                                   </div>
                             </td>
                         </tr>
                     </table>

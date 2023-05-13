@@ -5,6 +5,34 @@
   <meta charset="UTF-8" />
   <title>April</title>
   <style>
+    header {
+      background: #0e4a84;
+      padding-left: 25px;
+      padding-right: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+     }
+     .info {
+      padding: 5px 8px;
+      background-color: #0e4a84;
+      opacity:0.8; 
+      border-radius: 1px;
+      color: #e4e4e4;
+      position: absolute;
+      display: none;
+      top: 90px;
+      left: 90px;
+      border-radius: 5px;
+     }
+
+    .info-img:hover+.info{
+        display: block;
+      }
+    
+
+
     table {
       border-collapse: collapse;
       width: 80%;
@@ -73,9 +101,6 @@
       box-sizing: border-box;
     }
 
-    ul {
-      list-style-type: none;
-    }
 
     #header {
       justify-content: center;
@@ -129,18 +154,25 @@
       color: blue;
     }
   </style>
-  <div id="header">
-    <form action="March.html">
-      <button class="leftRight"><img src="left_button.jpg" height="25px" width="25px" alt=""></button>
-    </form>
-    <h1>4월</h1>
-    <form action="May.html">
-      <button class="leftRight"><img src="right_button.jpg" height="25px" width="25px" alt=""></button>
-    </form>
-  </div>
-</head>
+
 
 <body>
+  <header>
+    <p class="info-img"><a href="../main/main.html"><img src="logo_w.png" width="300px"></a></p>
+    <div class="info">메인 화면으로 돌아가기</div>
+</header>
+
+<div id="header">
+  <form action="March.html">
+    <button class="leftRight"><img src="left_button.jpg" height="25px" width="25px" alt=""></button>
+  </form>
+  <h1>4월</h1>
+  <form action="May.html">
+    <button class="leftRight"><img src="right_button.jpg" height="25px" width="25px" alt=""></button>
+  </form>
+</div>
+</head>
+  
   <div id="wrapper">
     <table>
       <thead>

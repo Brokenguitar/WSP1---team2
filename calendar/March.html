@@ -5,6 +5,49 @@
   <meta charset="UTF-8" />
   <title>March</title>
   <style>
+    header {
+      background: white;
+      padding-left: 25px;
+      padding-right: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #0e4a84;
+     }
+     .info {
+      padding: 5px 8px;
+      background-color: #0e4a84;
+      opacity:0.8; 
+      border-radius: 1px;
+      color: #e4e4e4;
+      position: absolute;
+      display: none;
+      top: 90px;
+      left: 90px;
+      border-radius: 5px;
+     }
+
+    .info-img:hover+.info{
+        display: block;
+      }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;  
+      }
+
+
+      li {
+        display: inline-block;
+        margin-left: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0e4a84;
+        }
+        a:link,a:visited {
+            color: #0e4a84;
+            text-decoration: none;
+        }
     table {
       border-collapse: collapse;
       width: 80%;
@@ -121,6 +164,21 @@
 </head>
 
 <body>
+  <header>
+    <p class="info-img"><a href="../main/main.html"><img src="logo_b.png" width="300px"></a></p>
+    <div class="info">메인 화면으로 돌아가기</div>
+    <nav>
+      <ul>
+        <li> <a href="../calendar/March.html">3월</a></li>
+        &nbsp;
+        <li><a href="../calendar/April.html">4월</a></li>
+        &nbsp;
+        <li><a href="../calendar/May.html">5월</a></li>
+        &nbsp;
+        <li><a href="../calendar/June.html">6월</a></li>
+      </ul>
+    </nav>
+</header>
 
   <div id="header">
     <img src="empty.png" height="128px" width="121px" alt="">
