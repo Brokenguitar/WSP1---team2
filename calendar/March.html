@@ -3,21 +3,38 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>March</title>
+  <title>April</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Malgun+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Barun+Gothic');
+    @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Square&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Square+Round&display=swap');
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
     header {
-      background: white;
+      background: #0e4a84;
       padding-left: 25px;
       padding-right: 32px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #0e4a84;
-     }
-     .info {
+      border-radius: 5px;
+    }
+
+
+    .info {
       padding: 5px 8px;
       background-color: #0e4a84;
-      opacity:0.8; 
+      opacity: 0.8;
       border-radius: 1px;
       color: #e4e4e4;
       position: absolute;
@@ -25,32 +42,17 @@
       top: 90px;
       left: 90px;
       border-radius: 5px;
-     }
+    }
 
-    .info-img:hover+.info{
-        display: block;
-      }
-    
-    ul {
-      list-style-type: none;
-      padding: 0;  
-      }
+    .info-img:hover+.info {
+      display: block;
+    }
 
-
-      li {
-        display: inline-block;
-        margin-left: 16px;
-        font-size: 18px;
-        font-weight: bold;
-        color: #0e4a84;
-        }
-        a:link,a:visited {
-            color: #0e4a84;
-            text-decoration: none;
-        }
     table {
+      float: left;
+      width: 70%;
+      height: 50vh;
       border-collapse: collapse;
-      width: 80%;
       table-layout: fixed;
     }
 
@@ -64,6 +66,7 @@
     td {
       text-align: left;
       vertical-align: top;
+
     }
 
     .weekdays {
@@ -81,14 +84,18 @@
       text-align: center;
       vertical-align: center;
       padding: 0.7em;
+      font-size: 1em;
+      /*다연 수정*/
     }
 
     .days td {
       background-color: #fff;
       font-weight: bold;
       height: 6em;
-      font-size: 20px;
+      font-size: 1.2em;
+      /*다연 수정*/
     }
+
 
     .date {
       color: #394c93;
@@ -115,9 +122,6 @@
       box-sizing: border-box;
     }
 
-    ul {
-      list-style-type: none;
-    }
 
     #header {
       justify-content: center;
@@ -125,7 +129,12 @@
       align-items: center;
       display: flex;
       flex-direction: row;
-      font-size: 1.5em;
+      font-size: 1.3em;
+      background-image: url("aa.jpg");
+      background-repeat: no-repeat;
+
+
+      /*다연 수정 : 작게 함*/
     }
 
     .leftRight {
@@ -134,6 +143,7 @@
 
     #wrapper {
       display: inline;
+      height: 100vh;
     }
 
     #content {
@@ -145,59 +155,137 @@
 
     #nav {
       float: right;
-
+      background-image: url("school_page.jpg");
       background-color: rgb(230, 242, 255);
       width: 30%;
-      /*이걸 flex로 하고 왼쪽 정렬하니까 안에 있는 글자가 일본 책마냥 써짐. 왜인지는 나중에 분석해해*/
+      height: 100vh;
+      /*다연 수정 - 하늘색 배경을 아래까지 꽉 차도록 함*/
+      /*이걸 flex로 하고 왼쪽 정렬하니까 안에 있는 글자가 일본 책마냥 써짐. 왜인지는 나중에 분석해해 -> 다연 수정*/
     }
 
-    table {
-      float: left;
-      width: 70%;
-    }
+
 
     button {
       all: unset;
     }
+
+    a {
+      font-size: 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    @media (max-width: 1024px) {
+      /*다연 수정 - 반응형*/
+
+      #nav {
+        display: none;
+      }
+
+      table {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+    }
+
+    @media (max-width: 500px) {
+      /*다연 수정 - 반응형*/
+
+      #wrapper {
+        display: none;
+      }
+
+      #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+      }
+
+      #nav h1 {
+        text-align: center;
+      }
+
+
+    }
+
+    #nav li>div {
+      box-sizing: border-box;
+      width: 350px;
+      height: 80px;
+      margin-bottom: 20px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px 20px;
+    }
+
+    #rec {
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    #thick {
+      display: inline;
+
+      border-left: 5px solid blue;
+      height: 60px;
+    }
   </style>
 
-</head>
 
 <body>
   <header>
-    <p class="info-img"><a href="../main/main.html"><img src="logo_b.png" width="300px"></a></p>
+    <p class="info-img"><a href="../main/main.html"><img src="logo_w.png" width="300px"></a></p>
     <div class="info">메인 화면으로 돌아가기</div>
-    <nav>
-      <ul>
-        <li> <a href="../calendar/March.html">3월</a></li>
-        &nbsp;
-        <li><a href="../calendar/April.html">4월</a></li>
-        &nbsp;
-        <li><a href="../calendar/May.html">5월</a></li>
-        &nbsp;
-        <li><a href="../calendar/June.html">6월</a></li>
-      </ul>
-    </nav>
-</header>
+  </header>
 
   <div id="header">
-    <img src="empty.png" height="128px" width="121px" alt="">
-    <h1>3월</h1>
-    <form action="April.html">
+    <form action="March.html">
+      <button class="leftRight"><img src="left_button.jpg" height="25px" width="25px" alt=""></button>
+    </form>
+    <h1 style="font-family: 'Nanum Square', sans-serif;">4월</h1> <!--다연 폰트 추가-->
+    <form action="May.html">
       <button class="leftRight"><img src="right_button.jpg" height="25px" width="25px" alt=""></button>
     </form>
+  </div>
+  </head>
+  <div id="nav">
+    <h1 style="text-align: center; font-family: 'Nanum Square', sans-serif;">이 달의 행사</h1> <!--다연 폰트 추가-->
+    <ul style="list-style : none;">
+      <li>
+        <div>
+          <h2 style="display:inline; ">10일</h2>&nbsp;&nbsp;&nbsp;&nbsp;<div id="thick"></div>&nbsp;&nbsp;&nbsp;
+          <h2 style="display:inline;">졸업논문제출기간</h2> &nbsp;&nbsp;<a href="../detail/detail.html"><img
+              src="right_button.jpg" style="width:15px; height:15px;"></a></h2>
+        </div>
+      </li>
+      <li>
+        <div style="width:350px; height:80px;  margin-bottom:20px; background-color:white;"></div>
+      </li>
+      <li>
+        <div style="width:350px; height:80px; margin-bottom:20px; background-color:white;"></div>
+      </li>
+    </ul>
   </div>
   <div id="wrapper">
     <table>
       <thead>
-        <tr class="weekdays">
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
+        <tr class="weekdays"> <!--다연 수정-->
+          <th>SUN</th>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>WED</th>
+          <th>THU</th>
+          <th>FRI</th>
+          <th>SAT</th>
         </tr>
       </thead>
       <tbody class="days">
@@ -205,79 +293,66 @@
           <td></td>
           <td></td>
           <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
           <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+
         </tr>
 
         <tr class="date">
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
           <td>5</td>
           <td>6</td>
           <td>7</td>
           <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
         </tr>
 
         <tr class="date">
+          <td>9</td>
+          <td>
+            10<br><a href="../detail/detail.html">
+              <div id="rec" style="background-color : lightblue">졸업논문제출기간</div>
+            </a>
+            <a href="../detail/detail.html">
+              <div id="rec" style="background-color : orange">자체 종강</div>
+            </a>
+          </td>
+          <td>11</td>
           <td>12</td>
           <td>13</td>
           <td>14</td>
           <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
+
         </tr>
 
         <tr class="date">
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
           <td>19</td>
           <td>20</td>
           <td>21</td>
           <td>22</td>
+        </tr>
+        <tr class="date">
           <td>23</td>
           <td>24</td>
           <td>25</td>
-        </tr>
-        <tr class="date">
           <td>26</td>
           <td>27</td>
           <td>28</td>
           <td>29</td>
+        </tr>
+        <tr class="date">
           <td>30</td>
-          <td>31</td>
-          <td></td>
         </tr>
       </tbody>
     </table>
-    <div id="nav">
-      <h1>와 이걸 해냄</h1>
-      <p>
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다.여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다.
-      </p>
-    </div>
+
   </div>
 </body>
 
-</html>
+</html
