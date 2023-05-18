@@ -4,222 +4,109 @@
 <head>
   <meta charset="UTF-8" />
   <title>May</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 80%;
-      table-layout: fixed;
-    }
-
-    thead {
-      background-color: #318998;
-      height: 2.5em;
-      width: 3em;
-    }
-
-    th,
-    td {
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .weekdays {
-      background-color: #ddd;
-    }
-
-    .move_button {
-      font-size: 50px;
-    }
-
-    .weekdays th {
-      background-color: #274472;
-      font-weight: bold;
-      color: #ddd;
-      text-align: center;
-      vertical-align: center;
-      padding: 0.7em;
-    }
-
-    .days td {
-      background-color: #fff;
-      font-weight: bold;
-      height: 6em;
-      font-size: 20px;
-    }
-
-    .date {
-      color: #394c93;
-    }
-
-    .days td.today {
-      background-color: #ccc;
-    }
-
-    .days td:not(.today):hover {
-      background-color: #aeb7e626;
-      cursor: pointer;
-    }
-
-    .month {
-      font-size: 30px;
-
-      text-align: center;
-      width: 87%;
-      margin: -50px;
-
-      padding-bottom: 0px;
-      /*border: 1px solid red;*/
-      box-sizing: border-box;
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
-    #header {
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      font-size: 1.5em;
-    }
-
-    .leftRight {
-      margin: 2em;
-    }
-
-    #wrapper {
-      display: inline;
-    }
-
-    #content {
-      float: left;
-      display: flex;
-      flex-direction: row;
-      background-color: red;
-    }
-
-    #nav {
-      float: right;
-
-      background-color: rgb(230, 242, 255);
-      width: 30%;
-      /*이걸 flex로 하고 왼쪽 정렬하니까 안에 있는 글자가 일본 책마냥 써짐. 왜인지는 나중에 분석해해*/
-    }
-
-    table {
-      float: left;
-      width: 70%;
-    }
-
-    button {
-      all: unset;
-    }
-  </style>
-  <div id="header">
-    <form action="April.html">
-      <button class="leftRight"><img src="left_button.jpg" height="25px" width="25px" alt=""></button>
-    </form>
-    <h1>5월</h1>
-    <form action="June.html">
-      <button class="leftRight"><img src="right_button.jpg" height="25px" width="25px" alt=""></button>
-    </form>
-  </div>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div id="wrapper">
-    <table>
-      <thead>
-        <tr class="weekdays">
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-        </tr>
-      </thead>
-      <tbody class="days">
-        <tr class="date">
-          <td></td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
+  <header>
+    <p class="info-img"><a href="../main/main.html"><img src="logo_w.png" width="300px"></a></p>
+    <div class="info">메인 화면으로 돌아가기</div>
+  </header>
 
-        <tr class="date">
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-          <td>13</td>
-        </tr>
-
-        <tr class="date">
-          <td>14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
-        </tr>
-
-        <tr class="date">
-          <td>21</td>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-          <td>26</td>
-          <td>27</td>
-        </tr>
-        <tr class="date">
-          <td>28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="nav">
-      <h1>와 이걸 해냄</h1>
-      <p>
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다.여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다.
-        여기엔 이번 달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번
-        달에 무슨 사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨
-        사건들이 있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이
-        있는지 쫘르르 보여줍니다. 여기엔 이번 달에 무슨 사건들이 있는지 쫘르르
-        보여줍니다.
-      </p>
+  <<div id="header">
+    <form action="April.html">
+      <button class="leftRight"><img src="left_button.jpg" height="25px" width="25px" alt=""></button>
+    </form>
+    <h1 style="font-family: 'Nanum Square', sans-serif;">5월</h1>
+    <form action="June.html">
+      <button class="leftRight"><img src="right_button.jpg" height="25px" width="25px" alt=""></button>
+    </form>
     </div>
-  </div>
+    </head>
+    <div id="nav">
+      <h1 style="text-align: center; font-family: 'Nanum Square', sans-serif;">이달의 주요 행사</h1> <!--다연 폰트 추가-->
+      <ul style="list-style : none;">
+        <li>
+          <div>
+            <h2 style="display:inline; ">10일</h2>&nbsp;&nbsp;&nbsp;&nbsp;<div id="thick"></div>&nbsp;&nbsp;&nbsp;
+            <h2 style="display:inline;">졸업논문제출기간</h2> &nbsp;&nbsp;<a href="../detail/detail.html"><img
+                src="right_button.jpg" style="width:15px; height:15px;"></a></h2>
+          </div>
+        </li>
+        <li>
+          <div style="width:350px; height:80px;  margin-bottom:20px; background-color:white;"></div>
+        </li>
+        <li>
+          <div style="width:350px; height:80px; margin-bottom:20px; background-color:white;"></div>
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <table>
+        <thead>
+          <tr class="weekdays">
+            <th>SUN</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+          </tr>
+        </thead>
+        <tbody class="days">
+          <tr class="date">
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+
+          <tr class="date">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+
+          <tr class="date">
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+
+          <tr class="date">
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr class="date">
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
 </body>
 
 </html>
