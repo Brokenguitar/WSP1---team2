@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>April</title>
+  <title>4월</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -11,7 +11,6 @@
   <header>
     <p class="info-img"><a href="../main/main.html"><img src="logo_w.png" width="300px"></a></p>
     <div class="info">메인 화면으로 돌아가기</div>
-    <script src="search.js"></script>
   </header>
 
   <div id="header">
@@ -23,27 +22,13 @@
       <button class="leftRight"><img src="right_button.jpg" height="25px" width="25px" alt=""></button>
     </form>
   </div>
-  </head>
+  
   <div id="nav" style="text-align:center;">
-    
-    <h1 style="text-align: center; font-family: 'Nanum Square', sans-serif;">이달의 주요 행사</h1> <!--다연 폰트 추가-->
-    <input type="text" id="searchInput" placeholder="주요일정검색" oninput="searchSchedule()">
-    <ul style="list-style : none;">
-      <li>
-        <div>
-          <h2 style="display:inline;">10일</h2>&nbsp;&nbsp;&nbsp;&nbsp;<div id="thick"></div>&nbsp;&nbsp;&nbsp;
-          <h2 style="display:inline;">졸업논문제출기간</h2> &nbsp;&nbsp;<a href="../detail/detail.html"><img
-              src="right_button.jpg" style="width:15px; height:15px;"></a></h2>
-        </div>
-      </li>
-      <li>
-        <div style="width:350px; height:80px;  margin-bottom:20px; background-color:white;"></div>
-      </li>
-      <li>
-        <div style="width:350px; height:80px; margin-bottom:20px; background-color:white;"></div>
-      </li>
-    </ul>
+    <h1 style="text-align: center; font-family: 'Nanum Square', sans-serif;">이달의 주요 행사</h1>
+    <input type="text" id="searchInput" placeholder="주요일정검색">
+    <ul id="eventList" style="list-style: none;"></ul>
   </div>
+  
   <div id="wrapper">
     <table>
       <thead>
@@ -152,8 +137,98 @@
         </tr>
       </tbody>
     </table>
-
   </div>
+  
+  <script>
+    var allEvents = [
+        { date: "10일", event: "졸업논문제출기간", link: "../detail/detail.html" },
+        { date: "11일", event: "음악대학 학생회 모집 지원기간", link: "../detail/detail.html" },
+        { date: "12일", event: "음악대학 춘계 연주회", link: "../detail/detail.html" },
+        // 이하 이벤트들...
+      ];
+
+      function displayAllEvents() {
+        var navDiv = document.getElementById("nav");
+        navDiv.innerHTML = ""; // Clear the existing content
+
+        var header = document.createElement("h1");
+        header.style.textAlign = "center";
+        header.style.fontFamily = "'Nanum Square', sans-serif;";
+        header.textContent = "이달의 주요 행사";
+        navDiv.appendChild(header);
+
+        var searchInput = document.createElement("input");
+        searchInput.type = "text";
+        searchInput.id = "searchInput";
+        searchInput.placeholder = "주요일정검색";
+        navDiv.appendChild(searchInput);
+
+        var eventList = document.createElement("ul");
+        eventList.id = "eventList";
+        navDiv.appendChild(eventList);
+
+        displayEvents(allEvents);
+      }
+
+
+
+
+      function searchEvents() {
+        var searchValue = document.getElementById("searchInput").value.trim().toLowerCase();
+        var filteredEvents = allEvents.filter(function (event) {
+          return event.event.toLowerCase().includes(searchValue);
+        });
+
+        displayEvents(filteredEvents);
+      }
+
+      function displayEvents(events) {
+        var eventList = document.createElement("ul");
+        eventList.style.listStyle = "none";
+
+        for (var i = 0; i < events.length; i++) {
+          var eventItem = document.createElement("li");
+          var eventDiv = document.createElement("div");
+
+          var eventDate = document.createElement("h2");
+          eventDate.style.display = "inline";
+          eventDate.textContent = events[i].date;
+
+          var eventTitle = document.createElement("h2");
+          eventTitle.style.display = "inline";
+          eventTitle.textContent = events[i].event;
+
+          var eventLink = document.createElement("a");
+          eventLink.href = events[i].link;
+
+          var eventImage = document.createElement("img");
+          eventImage.src = "right_button.jpg";
+          eventImage.style.width = "15px";
+          eventImage.style.height = "15px";
+
+          eventLink.appendChild(eventImage);
+
+          eventDiv.appendChild(eventDate);
+          eventDiv.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;<div id=\"thick\"></div>&nbsp;&nbsp;&nbsp;";
+          eventDiv.appendChild(eventTitle);
+          eventDiv.innerHTML += "&nbsp;&nbsp;";
+          eventDiv.appendChild(eventLink);
+
+          eventItem.appendChild(eventDiv);
+          eventList.appendChild(eventItem);
+        }
+
+        var navDiv = document.getElementById("nav");
+        navDiv.innerHTML = ""; // Clear the existing content
+        navDiv.appendChild(eventList);
+      }
+
+      displayAllEvents();
+
+      document.getElementById("searchInput").addEventListener("input", searchEvents);
+
+
+  </script>
 </body>
 
 </html>

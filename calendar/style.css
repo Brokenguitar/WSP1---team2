@@ -146,6 +146,30 @@
       background-color: red;
     }
 
+    #nav h1 {
+      margin: 70px 0;
+      margin-bottom: 30px;
+    }
+
+    #searchInput {
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 300px;
+      margin-bottom: 30px;
+    }
+    
+    #searchInput::placeholder {
+      color: #999;
+    }
+    
+    #searchInput:focus {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
     #nav {
       float: right;
       background-image: url("school_page.jpg");
@@ -154,11 +178,7 @@
       background-color: rgb(230, 242, 255);
       width: 30%;
       height: 100vh;
-      /*다연 수정 - 하늘색 배경을 아래까지 꽉 차도록 함*/
-      /*이걸 flex로 하고 왼쪽 정렬하니까 안에 있는 글자가 일본 책마냥 써짐. 왜인지는 나중에 분석해해 -> 다연 수정*/
     }
-
-
 
     button {
       all: unset;
@@ -175,7 +195,6 @@
     }
 
     @media (max-width: 1024px) {
-      /*다연 수정 - 반응형*/
 
       #nav {
         display: none;
@@ -189,7 +208,6 @@
     }
 
     @media (max-width: 500px) {
-      /*다연 수정 - 반응형*/
 
       #wrapper {
         display: none;
@@ -204,7 +222,7 @@
 
       }
 
-      #nav h1 {
+      #nav > h1 {
         text-align: center;
       }
 
@@ -219,6 +237,7 @@
       background-color: white;
       border-radius: 10px;
       padding: 25px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     #rec {

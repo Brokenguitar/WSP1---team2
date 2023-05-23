@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <title>May</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="search.js"></script>
 </head>
 
 <body>
@@ -23,8 +24,9 @@
     </form>
     </div>
     </head>
-    <div id="nav">
+    <div id="nav" style="text-align: center;">
       <h1 style="text-align: center; font-family: 'Nanum Square', sans-serif;">이달의 주요 행사</h1> <!--다연 폰트 추가-->
+      <input type="text" id="searchInput" placeholder="주요일정검색" oninput="searchSchedule()">
       <ul style="list-style : none;">
         <li>
           <div>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <title>March</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="search.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,9 @@
     </form>
   </div>
   </head>
-  <div id="nav">
+  <div id="nav" style="text-align: center;">
     <h1 style="text-align: center; font-family: 'Nanum Square', sans-serif;">이달의 주요 행사</h1> <!--다연 폰트 추가-->
+    <input type="text" id="searchInput" placeholder="주요일정검색" oninput="searchSchedule()">
     <ul style="list-style : none;">
       <li>
         <div>
@@ -107,7 +109,8 @@
         </tr>
         <tr class="date">
           <td>26</td>
-          <td>27<br>
+          <td>27
+            <br>
             <a href="../detail/detail.html">
             <div id="rec" style="background-color : lightblue">전체학생단위 학생회 정.부 학생회장 투표</div>
             <a href="../detail/detail.html">
@@ -116,8 +119,10 @@
           <td>28</td>
           <td>29</td>
           <td>30</td>
-          <td>31<br><a href="../detail/detail.html">
-              <div id="rec" style="background-color : lightblue">사범대학 만우절 이벤트</div>
+          <td>31
+            <br>
+            <a href="../detail/detail.html">
+            <div id="rec" style="background-color : lightblue">사범대학 만우절 이벤트</div>
           </td>
           <td></td>
         </tr>
