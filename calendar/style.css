@@ -43,10 +43,11 @@
 
     table {
       float: left;
-      width: 70%;
+      width: 68%;
       height: 50vh;
       border-collapse: collapse;
       table-layout: fixed;
+      margin: 0px 1%;
     }
 
     thead {
@@ -161,11 +162,11 @@
       width: 300px;
       margin-bottom: 30px;
     }
-    
+
     #searchInput::placeholder {
       color: #999;
     }
-    
+
     #searchInput:focus {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
@@ -222,7 +223,7 @@
 
       }
 
-      #nav > h1 {
+      #nav>h1 {
         text-align: center;
       }
 
@@ -250,7 +251,7 @@
 
     #nav ul {
       padding: 0;
-      display:flex;
+      display: flex;
       flex-direction: column;
       align-items: center;
     }
