@@ -79,7 +79,6 @@
       vertical-align: center;
       padding: 0.7em;
       font-size: 1em;
-      /*다연 수정*/
     }
 
     .days td {
@@ -87,7 +86,6 @@
       font-weight: bold;
       height: 6em;
       font-size: 1.2em;
-      /*다연 수정*/
     }
 
 
@@ -126,9 +124,6 @@
       font-size: 1.3em;
       background-image: url("aa.jpg");
       background-repeat: no-repeat;
-
-
-      /*다연 수정 : 작게 함*/
     }
 
     .leftRight {
@@ -278,4 +273,8 @@
       border-radius: 20%;
       padding-top: 12px;
       padding-bottom: 9px;
+    }
+
+    #remaining{
+      color: white;
     }

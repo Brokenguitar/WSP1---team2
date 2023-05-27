@@ -1,17 +1,3 @@
-function searchSchedule() {
-  let input = document.getElementById('searchInput').value; 
-  let scheduleItems = document.querySelectorAll('.date div'); 
-
-  scheduleItems.forEach(function(item) {
-    let scheduleName = item.textContent;
-    if (scheduleName.includes(input)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-}
-
 function semesterEnd() {
   let now = new Date();
   let end = new Date('June 21, ' + now.getFullYear());
