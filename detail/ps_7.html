@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>한양대학교 학사일정 안내 페이지</title>
+        <link rel="icon" type="image/x-icon" href="HYU_symbol_basic_png.png">
+        <style>
+           header {
+            background: #0e4a84;
+            padding-left: 25px;
+            padding-right: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+           }
+
+            ul {
+            list-style-type: none;
+            padding: 0;  
+            line-height: 2.1;
+            }
+
+            li {
+            display: inline-block;
+            margin-left: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            }
+            a:link,a:visited {
+                color: white;
+                text-decoration: none;
+            }
+            h1{
+                text-align: center;
+                margin-top:50px;
+                margin-bottom: 50px;
+                font-size: 40px;
+            }
+            .info {
+                padding: 5px 8px;
+                background-color: #0e4a84;
+                opacity:0.8; 
+                border-radius: 1px;
+                color: #e4e4e4;
+                position: absolute;
+                display: none;
+                top: 90px;
+                left: 90px;
+                border-radius: 5px;
+            }
+
+            .info-img:hover+.info{
+                display: block;
+            }
+
+            table.txt-table{
+                table-layout: fixed;
+                width: 100%;
+            }
+            table thead tr{
+                width: 100%
+            }
+            
+            table{
+                margin: 0 auto;
+            }
+
+            td {
+                word-break: break-word;
+                background-color:rgb(230, 242, 255);
+                border-radius: 10px;
+              } 
+
+              
+            th {
+                background-color:#0e4a84;
+                color: #ddd;
+                border-radius: 5px;
+              } 
+
+
+            @media (min-width:1000px) and (max-width: 1650px) {
+                table {
+                  width: 990px;
+                }
+              }
+              
+            @media (min-width: 1650px) {
+                table {
+                  width: 75%;
+                  
+                }
+              } 
+
+            .bold{
+                font-weight: bold;
+            }
+            .white{
+                border-radius: 10px;
+                width: 50%;
+                background-color: white;
+                border-style: hidden;
+
+            }
+            .whitetext{
+                background-color: white;
+                color: black;
+                font-size: 15px;
+            }
+            .d1{
+                background-color: white;
+                border-radius: 10px;
+                width:100%;
+                background-color: white;
+                border-style: hidden;
+                float:left;
+                height: 50px;
+                
+            }
+            .d2{
+               
+                top: 30%;
+                right: 30%;
+                border-radius: 10px;
+                width: 100%;
+                background-color: white;
+                border-style: hidden;
+                float:left;
+                height: 240px;
+                margin-top: 2%;
+                
+            }
+            #thick {
+                display: inline;
+                border-left: 3px solid blue;
+                border-radius: 0%;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            #thick2 {
+                display: inline;
+                border-left: 3px solid blue;
+                border-radius: 10%;
+                padding-top: 95px;
+                padding-bottom: 95px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <p class="info-img"><a href="../main/main.html"><img src="logo_w.png" width="300px"></a></p>
+            <div class="info" style="font-family: 'Nanum Square', sans-serif;">메인 화면으로 돌아가기</div>
+            <nav>
+              <ul>
+                <li> <a href="../calendar/March.html">3월</a></li>
+                &nbsp;
+                <li><a href="../calendar/April.html">4월</a></li>
+                &nbsp;
+                <li><a href="../calendar/May.html">5월</a></li>
+                &nbsp;
+                <li><a href="../calendar/June.html">6월</a></li>
+              </ul>
+            </nav>
+        </header>
+                  
+  
+        <h1 style="font-family: 'Nanum Square', sans-serif;">5월 23일</h1>
+   <table cellpadding="10">
+        <tr>
+            <th colspan="2">
+                <img class="a" src="ps_7.jpg" width="306" height="204"/><br>
+                
+            </th>
+            <td rowspan="3" > 
+                <div>
+
+                    <table class="d1">
+                        <tr class="white">
+                            <td class="white"> 
+                                <div class="bold" style="font-family: 'Nanum Square', sans-serif;" >&nbsp; 일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정 &nbsp;
+                                    <div id="thick"> &nbsp; &nbsp;
+                                    &nbsp;5.23(화)    </div>
+                            </td>
+                        </tr>    
+                    
+                    </div>
+                  
+
+                    </table>
+                    <table class="d2">
+                        <tr class="white">
+                            <td style="width:100px" class="white"> 
+                                <div class="bold" style="border-radius:20%">&nbsp; 세부내용 &nbsp;<div id="thick2"></div> <br> </div>
+                            </td>
+                            <td style= "height:100%"class="whitetext">
+                                    <ul> <!--내용 수정-->
+                                        <li class="whitetext">행사 일시 : 5.23(화) 19:00부터</li>
+                                        <li class="whitetext">행사 장소 : 융합교육관 내 강의실</li>
+                                        <li class="whitetext"> 신청기한 : 5.16~5.19</li>
+                                        <div style="padding-left:15px">
+                                        
+                                        <li class="whitetext">주의 사항:-정책과학대학 학생회비를 낸 학생만 참여 가능  
+                                        <li class="whitetext">-합당한 사유 없이 취소할 경우 다른 학생회 사업에서 후순위로 밀릴 수 있음</li>
+                                        <li class="whitetext">-모든 행사는 대면으로 진행되며 시간을 잘 지켜주실 것을 부탁드림</li>
+                                        <li class="whitetext">-교류시간에는 자유롭게 간식을 먹으며 진행 가능 </li>
+                                    </div>
+                                    </ul>
+                              
+                            </td>
+                        </tr>
+                    </table>
+    
+            </td>
+        </tr>
+        <tr align=center>
+            <th>
+                유&nbsp;&nbsp;형
+            </th>
+            <th>
+                [학사일정] <!--학사일정, 공휴일, 단과대 행사 등 기입-->
+            </th>
+        </tr>
+        <tr align=center>
+            <th>
+                제&nbsp;&nbsp;목 
+            </th>
+            <th>
+                정책과학대학 고민을 DOWN 미래를 다온 <!-- 행사 제목 -->
+            </th>
+        </tr>
+    </table>
+    </body>
+</html>
